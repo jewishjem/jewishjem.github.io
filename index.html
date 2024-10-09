@@ -6,14 +6,49 @@
     <title>Your Name's Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
+        header {
+            background-color: #fad9e0; /* Pastel pink */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Space between items */
+            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+        }
+        .main-content {
+            display: flex;
+            align-items: flex-start; /* Align items to the start */
+            padding: 20px;
+            justify-content: flex-start; /* Aligns items to the left */
+        }
+        .bio {
+            flex: 1; /* Allow bio to take available space */
+            text-align: left; /* Left-align the bio text */
+            padding-left: 20px; /* Add some space from the photo */
+            font-size: 1em; /* Smaller font size */
+        }
+
+
+        h1 {
+            margin: 0;
+            flex: 1; /* Allow the heading to grow */
+            text-align: center; /* Center the name */
+            font-size: 3em; /*Change the font size*/
+        }
+        p {
+            margin: 5px 0; /* Add some space around the paragraph */
+            font-size: 1em; /* Smaller font size */
+        }
+
+
         img {
-            max-width: 200px;
-            border-radius: 50%;
+            max-height: 300px; /* Limit height to avoid overflow */
+            width: auto; /* Maintain original aspect ratio */
+            margin-right: 20px; /* Space between photo and bio */
         }
         footer {
             background: #f1f1f1;
@@ -29,19 +64,34 @@
         }
         .logos img {
             margin: 10px;
-            max-width: 100px;
+            max-height: 100px; /* Limit height for logos */
+            width: auto; /* Maintain original aspect ratio */
         }
     </style>
 </head>
 <body>
-    <h1>Nina De La Torre</h1>
-    <img src="nina_headshot.jpg" alt="Nina De La Torre">
-    <p>This is a short bio about you.</p>
+    <header>
+        <h1>Nina De La Torre</h1>
+        <p>Email: haninadlt@gmail.com</p>
+        <p>Second Year CSEM Student</p>
+        <p>Oden Institute, UT Austin</p>
+    </header>
+
+
+
+    <div class="main-content">
+        <img src="nina_headshot.jpg" alt="Your Name">
+        <div class="bio">
+            <p>This is a short bio about you. You can include your interests, background, or anything else you'd like to share!</p>
+        </div>
+    </div>
+
+
 
     <footer>
         <div class="logos">
-            <img src="Primary-Fullcolor.png.png" alt="School Logo 1">
-            <img src="Primary-Fullcolor.png.png" alt="School Logo 2">
+            <img src="Primary-Fullcolor.png" alt="School Logo 1">
+            <img src="ut_logo.png" alt="School Logo 2">
         </div>
     </footer>
 </body>
