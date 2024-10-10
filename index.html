@@ -7,6 +7,7 @@
 	Note: Only needed for demo purposes. Delete for production sites.
 -->
 <html>
+    
 	
 	<head>
 		<title>Story by HTML5 UP</title>
@@ -14,6 +15,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+
+        <style>
+            .image {
+                display: flex; /* Use flexbox to align items horizontally */
+                align-items: center; /* Vertically center the logos */
+            }
+
+            .footer-logo {
+                max-width: 300px; /* Adjust width as needed */
+                height: auto; /* Maintain aspect ratio */
+                margin-right: 300px; /* Space between logos */
+            }
+
+            .secondary-logo {
+                max-width: 300px; /* Adjust size as needed */
+                height: auto; /* Maintain aspect ratio */
+            }
+        </style>
+
+
+
 	</head>
 	<body class="is-preload">
 
@@ -45,7 +68,7 @@
 							<h2>France</h2>
 							<p>Nina studied abroad in Strasbourg, France for four months in the fall of 2022. Unfortunately no, Nina does not in fact speak french at all. But she does have the strange abilities to 1: Read french sentences very terribly but with great confidence, and 2: Speak loud gibberish that sound somewhat french-like. </p>
 							<ul class="actions stacked">
-								<li><a href="#second" class="button large wide smooth-scroll-middle">Learn More</a></li>
+								<li><a href="#second" class="button large wide smooth-scroll-middle">Tell Me Something Useful</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -56,18 +79,33 @@
 				<!-- Spotlight -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
 						<div class="content">
-							<h2>Spotlight</h2>
-							<p>This is also a <strong>Spotlight</strong> element, and it's here because this demo would look a bit empty with just one spotlight. Like all spotlights, you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-spotlight">details</a>).</p>
-							<ul class="actions stacked">
+							<h2>Skills</h2>
+							<p>Nina is proficient in Python, Matlab, and Julia and has experience using Github, SAS, and Surface Evolver. Her first job ever was as an instructor at Mathnasium, a math tutoring center for grades k-12th. Nina values being able to communicate and present difficult technical topics in ways that are easy to understand and fun to learn.</p>
+							<!--
+                            <ul class="actions stacked">
 								<li><a href="#" class="button">Learn More</a></li>
 							</ul>
+                        -->
 						</div>
 						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
+							<img src="images/dino_cropped.png" alt="" />
 						</div>
 					</section>
 
+
+
+
+
+
+
+
+
+
+
+
+
 				<!-- Spotlight -->
+                 <!--
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Spotlight</h2>
@@ -80,15 +118,19 @@
 							<img src="images/spotlight03.jpg" alt="" />
 						</div>
 					</section>
+                -->
 
 				<!-- Gallery -->
+                 <!--
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Gallery</h2>
 							<p>This is a <strong>Gallery</strong> element. It can behave as a lightbox (when given the <code>lightbox</code> class), and you can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-gallery">details</a>).</p>
 						</div>
+                    -->
 
 						<!-- Gallery -->
+                         <!--
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
 								<article>
 									<a href="images/gallery/fulls/01.jpg" class="image">
@@ -237,8 +279,10 @@
 							</div>
 
 					</section>
+                -->
 
 				<!-- Items -->
+                 <!--
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Items</h2>
@@ -307,15 +351,19 @@
 							</div>
 						</div>
 					</section>
+                -->
 
 				<!-- Additional Elements -->
+                 <!--
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Additional Elements</h2>
 							<p>Finally, here are some additional elements you <em>might</em> find useful (and yup, they look fine with any <span class="demo-controls">appearance</span>).</p>
 							<div class="index align-left">
+                            -->
 
 								<!-- Text -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Text</h3>
@@ -329,8 +377,10 @@
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Heading -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Headings</h3>
@@ -370,8 +420,10 @@
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Unordered List -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Unordered List</h3>
@@ -400,8 +452,10 @@
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Ordered List -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Ordered List</h3>
@@ -419,8 +473,10 @@
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Definition List -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Definition List</h3>
@@ -444,8 +500,10 @@
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Blockquote -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Blockquote</h3>
@@ -456,8 +514,10 @@
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Code -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Code</h3>
@@ -465,6 +525,8 @@
 										<div class="content">
 
 											<pre><code>i = 0;
+                                            
+
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -477,8 +539,9 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
-
+                                -->
 								<!-- Icons -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Icons</h3>
@@ -505,8 +568,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Buttons -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Buttons</h3>
@@ -545,8 +610,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Actions -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Actions</h3>
@@ -579,8 +646,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Form -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Form</h3>
@@ -639,8 +708,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Table -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Table</h3>
@@ -741,8 +812,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Images -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Images</h3>
@@ -760,8 +833,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Box -->
+                                 <!--
 									<section>
 										<header>
 											<h3>Box</h3>
@@ -780,15 +855,19 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 						</div>
 					</section>
+                -->
 
 				<!-- Modifiers -->
+                 <!--
 					<section class="wrapper style1 align-center" id="reference">
 						<div class="inner">
 							<h2>Elements Reference</h2>
 							<p>Oh, and this: a handy reference to all the modifiers supported by various elements.</p>
 							<div class="index align-left">
+                            -->
 
 								<!-- Banner -->
+                                 <!--
 									<section id="reference-banner">
 										<header>
 											<h3>Banner</h3>
@@ -806,8 +885,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 &lt;/section&gt;</code></pre>
 
 											<hr />
+-->
 
 											<!-- style1 -->
+                                             <!--
 												<section>
 													<h4><code>banner style1</code></h4>
 													<p>A 50/50 vertical split between content and an image. Supports these modifiers:</p>
@@ -955,8 +1036,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style2 -->
+                                             <!--
 												<section>
 													<h4><code>banner style2</code></h4>
 													<p>Boxed-in content set against an image background, and attached to either side of the screen or centered. Supports these modifiers:</p>
@@ -1108,8 +1191,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style3 -->
+                                             <!--
 												<section>
 													<h4><code>banner style3</code></h4>
 													<p>An image within a circular frame placed to the side of content. Supports these modifiers:</p>
@@ -1289,8 +1374,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style4 -->
+                                             <!--
 												<section>
 													<h4><code>banner style4</code></h4>
 													<p>An image within a phone-shaped frame placed to the side of content. Supports these modifiers:</p>
@@ -1481,8 +1568,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style5 -->
+                                             <!--
 												<section>
 													<h4><code>banner style5</code></h4>
 													<p>Content set directly against an image background. Supports these modifiers:</p>
@@ -1620,8 +1709,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Spotlight -->
+                                 <!--
 									<section id="reference-spotlight">
 										<header>
 											<h3>Spotlight</h3>
@@ -1639,8 +1730,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 &lt;/section&gt;</code></pre>
 
 											<hr />
+-->
 
 											<!-- style1 -->
+                                             <!--
 												<section>
 													<h4><code>spotlight style1</code></h4>
 													<p>A 30/70 (or 70/30, depending on orientation) vertical split between content and an image. Supports these modifiers:</p>
@@ -1781,8 +1874,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style2 -->
+                                             <!--
 												<section>
 													<h4><code>spotlight style2</code></h4>
 													<p>An image within a circular frame placed to the side of content. Supports these modifiers:</p>
@@ -1955,8 +2050,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style3 -->
+                                             <!--
 												<section>
 													<h4><code>spotlight style3</code></h4>
 													<p>An image within a phone-shaped frame placed to the side of content. Supports these modifiers:</p>
@@ -2129,8 +2226,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style4 -->
+                                             <!--
 												<section>
 													<h4><code>spotlight style4</code></h4>
 													<p>Boxed-in content set against an image background, and attached to either side of the screen or centered. Supports these modifiers:</p>
@@ -2286,8 +2385,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style5 -->
+                                             <!--
 												<section>
 													<h4><code>spotlight style5</code></h4>
 													<p>Boxed-in content set against an image background. Supports these modifiers:</p>
@@ -2444,8 +2545,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Gallery -->
+                                 <!--
 									<section id="reference-gallery">
 										<header>
 											<h3>Gallery</h3>
@@ -2482,8 +2585,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 &lt;/div&gt;</code></pre>
 
 											<hr />
+-->
 
 											<!-- style1 -->
+                                             <!--
 												<section>
 													<h4><code>gallery style1</code></h4>
 													<p>A grid of thumbnails with optional lightbox support. Supports these modifiers:</p>
@@ -2530,8 +2635,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style2 -->
+                                             <!--
 												<section>
 													<h4><code>gallery style2</code></h4>
 													<p>A carousel of thumbnails with optional lightbox support. Supports these modifiers:</p>
@@ -2579,8 +2686,9 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
-
+                                -->
 								<!-- Items -->
+                                 <!--
 									<section id="reference-items">
 										<header>
 											<h3>Items</h3>
@@ -2605,8 +2713,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 &lt;/div&gt;</code></pre>
 
 											<hr />
+-->
 
 											<!-- style1 -->
+                                             <!--
 												<section>
 													<h4><code>items style1</code></h4>
 													<p>A grid of items separated by borders.</p>
@@ -2646,8 +2756,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style2 -->
+                                             <!--
 												<section>
 													<h4><code>items style2</code></h4>
 													<p>An outlined grid of items separated by borders.</p>
@@ -2687,8 +2799,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 												</section>
 
 											<hr />
+                                            -->
 
 											<!-- style3 -->
+                                             <!--
 												<section>
 													<h4><code>items style3</code></h4>
 													<p>A borderless grid of items.</p>
@@ -2729,8 +2843,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 										</div>
 									</section>
+                                -->
 
 								<!-- Wrapper -->
+                                 <!--
 									<section id="reference-wrapper">
 										<header>
 											<h3>Wrapper</h3>
@@ -2791,10 +2907,19 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 						</div>
 					</section>
+                -->
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
+                        
 						<div class="inner">
+                            
+
+                            <div class="image">
+                                <img src="images/Primary-Fullcolor.png" alt="Your Logo" class="footer-logo" />
+                                <img src="images/ut_logo.png" alt="Secondary Logo" class="footer-logo secondary-logo" />
+                            </div>
+                            <!--
 							<ul class="icons">
 								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -2802,7 +2927,10 @@ print 'It took ' + i + ' iterations to sort the deck.';
 								<li><a href="#" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
+                        
+
 							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                        -->
 						</div>
 					</footer>
 
@@ -2817,8 +2945,13 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+            
+
 		<!-- Note: Only needed for demo purposes. Delete for production sites. -->
 			<script src="assets/js/demo.js"></script>
 
 	</body>
+    
+    
 </html>
+
