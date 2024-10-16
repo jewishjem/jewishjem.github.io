@@ -1,5 +1,5 @@
 # jewishjem.github.io
-This is my personal website!
+This is my personal website! [Take a look!](https://jewishjem.github.io)  
 Here is the readme!
 
 # Notes
