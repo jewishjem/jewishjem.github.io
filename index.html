@@ -47,6 +47,54 @@
                 max-width: 300px; /* Adjust size as needed */
                 height: auto; /* Maintain aspect ratio */
             }
+
+			.fun-fact-carousel {
+                position: relative;
+            }
+
+            .fun-fact-track {
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                scroll-snap-type: x mandatory;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            .fun-fact-track::-webkit-scrollbar {
+                display: none;
+            }
+
+            .fun-fact-card {
+                flex: 0 0 100%;
+                scroll-snap-align: start;
+                padding-right: 2.5rem;
+            }
+
+            .fun-fact-next {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 100%;
+                padding: 0;
+                line-height: 2.5rem;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 736px) {
+                .fun-fact-card {
+                    padding-right: 0;
+                }
+
+                .fun-fact-next {
+                    position: static;
+                    transform: none;
+                    margin-top: 1rem;
+                }
+            }
         </style>
 
 
@@ -62,9 +110,11 @@
 						<div class="content">
 							<h1>Nina De La Torre</h1>
 							<p class="major">Gmail: Haninadlt@gmail.com</p>
+							<p class="major">Phone: (210)-724-4492</p>
+							<p class="major"><a href="https://www.linkedin.com/in/nina-de-la-torre-7858701a8/">LinkedIn</a></p>
 							<p class="major"><a href="https://github.com/nnd389">Github</a></p>
 							<p class="major"><a href="https://oden.utexas.edu/people/directory/Nina-Noel-De-La-Torre/">UT Bio</a></p>
-							<p>Nina is in her second year at the Oden Institute in UT Austin's Computational Science, Engineering, and Math (CSEM) PhD program. She has a B.S. in Mathematics from the University of Texas at San Antonio (UTSA) where she worked as an undergraduate researcher under the mentorship of Dr. Alperen Ergür studying applications of algebraic geometry. Her research interests are physical simulation, modeling astrochemistry networks, and machine learning approaches to solving systems of ordinary differential equations (ODEs). ODEs are a mathematical language to describe systems of change, and Nina’s mission is to effectively and efficiently solve problems that deal with change. </p>
+							<p>Nina is currently pursuing her PhD at UT Austin in the Oden Institute's Computational Science, Engineering, and Math (CSEM) program. She has a B.S. in Mathematics from the University of Texas at San Antonio (UTSA). She is currently advised by Dr. Etienne Vouga, and her research focuses on paper simulation and pop-up cards! Nina’s work lies at the intersection of graphics, math, and art. Nina believes that mathematics is elegant, beautiful, and deserves to be accessible to all, and with the right communication, inspires those who dare to gaze upon it. </p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button large wide smooth-scroll-middle">Tell Me a Fun Thing</a></li>
 							</ul>
@@ -79,14 +129,26 @@
 				<!-- Spotlight -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>France</h2>
-							<p>Nina studied abroad in Strasbourg, France for four months in the fall of 2022. Unfortunately no, Nina does not in fact speak french at all. But she does have the strange abilities to 1: Read french sentences very terribly but with great confidence, and 2: Speak loud gibberish that sound somewhat french-like. </p>
+							<div class="fun-fact-carousel">
+								<div class="fun-fact-track" id="france-facts">
+									<article class="fun-fact-card">
+										<h2>Bows</h2>
+										<p>If spotted in the wild, Nina is most recognizable by the signature bow in her hair. In an attempt to deflect from her vanity, she claims that the majority of her bows were gifts from friends. Nina has been facing recent internal conflict as she wants to switch to fun hair clips but can’t because of branding purposes.</p>
+									</article>
+									<article class="fun-fact-card">
+										<h2>France</h2>
+										<p>Nina studied abroad in Strasbourg, France for four months in the fall of 2022. Unfortunately no, Nina does not in fact speak french at all. But she does have the strange abilities to 1: Read french sentences very terribly but with great confidence, and 2: Speak loud gibberish that sound somewhat french-like. </p>
+									</article>
+									
+								</div>
+								<button class="button fun-fact-next" type="button" aria-controls="france-facts" aria-label="Show the next France fun fact">&rarr;</button>
+							</div>
 							<ul class="actions stacked">
 								<li><a href="#second" class="button large wide smooth-scroll-middle">Tell Me Something Useful</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/ice_cream.png" alt="" />
+							<img src="images/bows.png" alt="" id="france-fact-image" data-fact-images="images/bows.png,images/ice_cream.png" />
 						</div>
 					</section>
 
@@ -94,7 +156,7 @@
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="second">
 						<div class="content">
 							<h2>Skills</h2>
-							<p>Nina is proficient in Python, Matlab, Julia, and Surface Evolver and has experience using Github, SAS, and C++. Her first job ever was as an instructor at Mathnasium, a math tutoring center for grades k-12th. Nina values being able to communicate and present difficult technical topics in ways that are easy to understand and fun to learn.</p>
+							<p>Nina is proficient in Python, Matlab, Julia, Javascript, GLSL, Git, and Surface Evolver and has some experience with R, C and C++. Nina is versed in technical writing, public speaking and communication, and working in teams. Nina is very sociable and approachable; please don’t be afraid to reach out!</p>
 							
                             <ul class="actions stacked">
 								<li><a href="#third" class="button large wide smooth-scroll-middle">So What Has Nina Been Doing With Her Life?</a></li>
@@ -110,7 +172,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="third">
 						<div class="content">
 							<h2>Experience</h2>
-							<p>Nina is currently working with Stella Offner doing research in modeling astrochemistry networks in Julia. She was an undergradute research assistant at UTSA where she graduated in 2023, and she also did research at a summer research experience for undergraduates at NC State in 2022 where she used Surface Evolver to model the cross section of a zebrafish notochord. </p>
+							<p>Aside from her research, most recently Nina has worked as a documentation intern at MathWorks, a matching and data analyst for the Office of Career and Life Design at UT, and as a teaching assistant in the Computer Science department at UT. Her first job ever was as an instructor at Mathnasium, a math tutoring center for grades k-12th. Nina values being able to communicate and present difficult technical topics in ways that are easy to understand and fun to learn.</p>
 							<!--
 							<ul class="actions stacked">
 								<li><a href="#second" class="button large wide smooth-scroll-middle">Tell Me Something Useful</a></li>
@@ -2974,6 +3036,33 @@ print 'It took ' + i + ' iterations to sort the deck.';
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				(function() {
+					var franceFacts = document.getElementById('france-facts');
+					var franceFactNext = document.querySelector('.fun-fact-next');
+					var franceFactImage = document.getElementById('france-fact-image');
+
+					if (!franceFacts || !franceFactNext)
+						return;
+
+					var franceFactImages = franceFactImage ? franceFactImage.getAttribute('data-fact-images').split(',') : [];
+
+					franceFactNext.addEventListener('click', function() {
+						var cardWidth = franceFacts.querySelector('.fun-fact-card').offsetWidth;
+						var atEnd = franceFacts.scrollLeft + cardWidth >= franceFacts.scrollWidth - 1;
+						var nextLeft = atEnd ? 0 : franceFacts.scrollLeft + cardWidth;
+						var nextIndex = Math.round(nextLeft / cardWidth);
+
+						if (franceFactImage && franceFactImages[nextIndex])
+							franceFactImage.src = franceFactImages[nextIndex];
+
+						franceFacts.scrollTo({
+							left: nextLeft,
+							behavior: 'smooth'
+						});
+					});
+				})();
+			</script>
 
             
 
